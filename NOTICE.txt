@@ -1,0 +1,25 @@
+OCI8 11g extension builds for PHP
+
+This product includes PHP software, freely available from
+<http://www.php.net/software/>.
+
+The OCI8 extension is compiled from the unmodified PECL OCI8 3.4.1 source:
+https://github.com/php/pecl-database-oci8/tree/v3.4.1
+The extension is distributed under the PHP License 3.01. The full upstream
+copyright notice, license conditions and disclaimer are in OCI8-LICENSE.txt
+in binary packages and licenses/OCI8-LICENSE.txt in this repository.
+
+These are unofficial builds. They are not endorsed by the PHP Group or Oracle.
+
+No Oracle Client installer, SDK headers, import library or runtime DLL is
+included in the release packages. The extension dynamically imports OCI.dll.
+Obtain and license the matching Oracle Client separately. Oracle Client 11.2
+is obsolete and these builds are not a production security-support guarantee.
+
+Select the package matching your PHP 8.2/8.3/8.4/8.5 version, TS/NTS setting
+and x64 architecture. The MSVC/Visual C++ runtime must also match PHP's requirements.
+PHP2Shell mitigation requires upgrading the PHP runtime itself; installing this
+extension alone does not fix CVE-2026-109618 or CVE-2026-109619. See the repository's
+SECURITY.md and the upstream PHP security advisories.
+Compilation and checksums are verified; extension loading and Oracle database
+connections have not yet been tested.

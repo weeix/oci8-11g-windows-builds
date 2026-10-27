@@ -1,0 +1,11 @@
+# Proprietary Oracle media and generated build files must never enter Git.
+*.zip
+*.tgz
+*.dll
+*.lib
+*.pdb
+oracle*/
+dist/
+artifacts/
+build-*/
+.env
